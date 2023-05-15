@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100svh;
+}
+.container{
+    background-color: #c4c4c4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 50%;
+}
