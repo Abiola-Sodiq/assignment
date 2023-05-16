@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 img{
-    height: 15svh;
-    width: 8rem;
+    height: 25svh;
+    width: 10rem;
 }
 body{
     height: 100svh;
 }
  .maincontainer{
-    background-color: #c4c4c4;
+    background-color: #71397cce;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -19,13 +19,15 @@ body{
 }
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    grid-template-rows: 3rem 1fr 1fr 1fr;
+    gap: .5rem;
+}
+h1{
+    background:  linear-gradient(#eee, #333);
 }
 
-span{
-     height: 25%; 
+span{ 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: .5rem;
 }
