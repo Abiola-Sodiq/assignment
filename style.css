@@ -1,17 +1,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 15svh;
+    width: 8rem;
 }
 body{
     height: 100svh;
 }
-.container{
+ .maincontainer{
     background-color: #c4c4c4;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-img{
-    width: 50%;
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+span{
+     height: 25%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
