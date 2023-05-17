@@ -1,11 +1,3 @@
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 const body = document.body;
 const div = document.createElement("div");
 const div2 = document.createElement("div");
@@ -25,7 +17,6 @@ const img9 = document.createElement("img");
 
 div.classList.add("maincontainer");
 div2.classList.add("container");
-let images = document.querySelectorAll("img");
 
 body.append(div);
 div.append(div2);
@@ -48,7 +39,9 @@ const imageSources = [
   "./images/abibi9.JPG",
 ];
 
-const shuffledSources = shuffleArray(imageSources);
+
+const shuffledSources = imageSources.sort(() => Math.random() - 0.5);
+
 
 img.setAttribute("src", shuffledSources[0]);
 img2.setAttribute("src", shuffledSources[1]);
@@ -59,4 +52,3 @@ img6.setAttribute("src", shuffledSources[5]);
 img7.setAttribute("src", shuffledSources[6]);
 img8.setAttribute("src", shuffledSources[7]);
 img9.setAttribute("src", shuffledSources[8]);
-
