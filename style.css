@@ -6,6 +6,8 @@
 img{
     height: 25svh;
     width: 10rem;
+    border-radius: 10px;
+
 }
 body{
     height: 100svh;
@@ -23,7 +25,9 @@ body{
     gap: .5rem;
 }
 h1{
-    background:  linear-gradient(#eee, #333);
+    background:  linear-gradient(#eee, #5e5a5a);
+    color: rgb(33, 58, 58);
+    border-radius: 5px;
 }
 
 span{ 
